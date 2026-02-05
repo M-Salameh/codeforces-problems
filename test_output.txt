@@ -1,0 +1,32 @@
+from node : 1 we found centroid : 2
+from node : 1 we found centroid : 5
+from node : 4 we found centroid : 1
+from node : 4 we found centroid : 4
+from node : 3 we found centroid : 3
+node = 1 has : 
+centeroid = 2 with depth = 1
+centeroid = 5 with depth = 2
+centeroid = 1 with depth = 0
+***********
+node = 2 has : 
+centeroid = 2 with depth = 0
+***********
+node = 3 has : 
+centeroid = 2 with depth = 1
+centeroid = 3 with depth = 0
+***********
+node = 4 has : 
+centeroid = 2 with depth = 2
+centeroid = 5 with depth = 1
+centeroid = 1 with depth = 1
+centeroid = 4 with depth = 0
+***********
+node = 5 has : 
+centeroid = 2 with depth = 3
+centeroid = 5 with depth = 0
+***********
+q=3
+q=2
+q=1
+2
+q=0

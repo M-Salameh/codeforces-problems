@@ -9,3 +9,7 @@ new problems. all solutions work fine.
 
 ## Running Codes
 any IDE with mingw64 like codeblocks or proberly set VS Code and CLion etc..
+
+## Vs code
+use the provided tasks.json if anything goes wrong with your setup.
+build using ctrl + shift + B

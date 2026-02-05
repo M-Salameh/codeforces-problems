@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 #define int long long
 #define mid (l+r)/2
 #define lc 2*node

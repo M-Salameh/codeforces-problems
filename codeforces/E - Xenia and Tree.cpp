@@ -60,10 +60,11 @@ void prop (int node , int par , int centr , int depth=0)
 
 void centroid_decomp(int node = 1)
 {
+    cout << "from node : " << node << " we found centroid : " ;
     dfs(node , 0);
     int centr = centroid(node , sub[node]/2);
     processed[centr] = true;
-    ///cout << "cntroid = " << centr << endl;
+    cout << centr << endl;
     prop(centr , 0 , centr);
     for (int child : adj[centr])
     {
@@ -100,7 +101,7 @@ void solve()
     for (int i=0 ; i<=n+1 ; i++) ans[i] = NN;
     centroid_decomp();
 
-    /**for (int i=1 ; i<=n ; i++)
+    for (int i=1 ; i<=n ; i++)
     {
         cout << "node = " << i << " has : " << endl;
         for (auto [cen , dep] : modified[i])
@@ -108,12 +109,13 @@ void solve()
             cout << "centeroid = " << cen << " with depth = " << dep << endl;
         }
         cout <<"***********" << endl;
-    }*/
+    }
 
     update(1);
     int a , b;
     while(q--)
     {
+        cout << "q=" << q << endl;
         cin >> a >> b;
         if (a == 2)
         {
@@ -131,8 +133,8 @@ signed main()
     ///cin >> tc;
     while (tc--)
     {
-        ///freopen("test_input.txt" , "r" , stdin);
-        ///freopen("test_output.txt" , "w" , stdout);
+        freopen("test_input.txt" , "r" , stdin);
+        freopen("test_output.txt" , "w" , stdout);
         cin >> n >> q;
         for (int i=2 , u , v ; i<=n ; i++)
         {
